@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Açougano | Loja </title>	
+	<meta charset="utf-8">
+	<meta name="description" content="Comércio eletrônico de um açougue vegano.">
+	<meta name="keywords" content="Açougue, veganismo">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="robots" content="">
+ 	<meta name="author" content="Equipe Innolume">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/apple.png" type="image/x-icon">
+	<link rel="icon" href="img/apple.png" type="image/x-icon">
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+ 	<!-- Font Awesome -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!-- Bootstrap/CSS -->
+  	<!-- Bootstrap 4.0 -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+</head>
+<body>
+	<div class="mobile-display" >
+		<h2 class="site-title">
+			<a href="#">
+				<img src="img/logonovo.png" alt="Açogano">
+			</a>
+		</h2>
+	</div>
+	<header class="cabecalho">
+    	<div id="content">
+      <!-- Modal do Login-->
+      <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-5">
+                         <div class="col-sm-12 card" style="width: 20rem; border:none;">
+                          <img class="imagemodal" src="img/modal.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="col-md-7 ml-auto">
+                        <h4 class="modal-title tcenter">AÇOUGANO</h4><br>
+                        <p class="tcenter">Entre para começar </p>
+                        <form>
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Senha">
+                          </div>
+                         
+                         <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                              Manter conectado
+                            </label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-info btn-block">Entrar</button>
+                            </div>
+                          </div>
+                          </div>
+                          <br>
+                          <p class="tcenter">- OU -</p>
+                          <div class="col-md-12 posicao">
+                            <button type="submit"  class="btn btn-primary btn-block">Facebook</button><br>
+                            <button type="submit"  class="btn btn-danger btn-block">Google</button><br>
+                            <!--a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a-->
+                          </div>
+                          <a class="popup" href="#">Esqueceu sua senha</a><br>
+                          <a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a>
+                        </form>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.container-fluid -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->  
+
+      <!-- Modal do Cadastro-->
+      <div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-5">
+                         <div class="col-sm-12 card" style="width: 20rem; border:none;">
+                          <img class="imagemodal" src="img/modal.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="col-md-7 ml-auto">
+                        <h4 class="modal-title tcenter">AÇOUGANO</h4><br>
+                        <p class="tcenter"> Cadastre-se para começar</p>
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Digite seu nome">
+                          </div>
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Digite seu email">
+                          </div>
+                          <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Digite sua senha">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirme sua senha">
+                            </div>
+                          </div>
+                          </div>
+                          <br>
+                          <div class="col-md-12">
+                            <button type="submit" class="btn btn-info btn-block tcenter">Cadastrar</button><br>
+                          </div>
+                          <p class="tcenter">- OU -</p>
+                          <div class="col-md-12 posicao">
+                            <button type="submit"  class="btn btn-primary btn-block">Facebook</button><br>
+                            <button type="submit"  class="btn btn-danger btn-block">Google</button><br>
+                            <!--a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a-->
+                          </div>
+                          <a class="popup" data-toggle="modal" data-target="#myModal">Já tenho cadastro</a>
+                        </form>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.container-fluid -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+		  </div><!-- /.modal --> 
+		</div>	
+     	<nav>
+			<a href="#" class="toggle-menu">&#9776;</a>
+			<ul class="nav-list nav-open" id="nav">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="loja.html">Loja</a></li>
+				<li><a href="sobre.html">Sobre nós</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li class="has-logo"><a href="#">
+					<h2 class="site-title">
+						<img src="img/logonovo.png" alt="Açogano">
+					</h2>
+				</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal">Login</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal2">Registre-se</a></li>
+				<li><a href="carrinho.html"><img src="img/icon-cart.svg" alt="" /> Meu carrinho (0)</a></li>
+			</ul>
+		</nav>
+	</header>	
+	<div id="topo3">
+	</div>
+  	<main>
+  		<div class="quemsomos">
+		<article class="tcenter">
+			<h2 class="sobre" style="color: #fff;">Categorias</h2>
+			<hr>
+		</article>
+
+		<div class="row text-center">
+			<div class="col-sm-5 col-md-6 col-lg-4" >
+				<div class="categorias card-size2 text-white bg-dark" style="width: 22;">
+					<div class="card-header tcenter">
+						<img src="img/steak.png" alt="Espetinhos">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Espetinhos">Espetinhos</a>
+						</h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 col-md-6 col-lg-4">
+				<div class="categorias card-size2 text-white bg-dark"
+					style="width: 24, 7rem;">
+					<div class="card-header tcenter">
+						<img src="img/hamburguer.png" alt="Hambúrgueres">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Hamburgueres">Hambúrgueres</a>
+						</h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 col-md-6 col-lg-4">
+				<div class="categorias card-size2 text-white bg-dark"
+					style="width: 24, 7rem;">
+					<div class="card-header tcenter">
+						<img src="img/roll.png" alt="Bolinhos">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Bolinhos">Bolinhos</a>
+						</h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-5 col-md-6 col-lg-4">
+				<div class="categorias card-size2 text-white bg-dark"
+					style="width: 24, 7rem;">
+					<div class="card-header">
+						<img src="img/pasta.png" alt="Sopas">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Sopas">Sopas</a>
+						</h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 col-md-6 col-lg-4">
+				<div class="categorias card-size2 text-white bg-dark"
+					style="width: 24, 7rem;">
+					<div class="card-header">
+						<img src="img/glass.png" alt="Sucos">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Sucos">Sucos</a></h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 col-md-6 col-lg-4">
+				<div class="categorias card-size2 text-white bg-dark"
+					style="width: 24, 7rem;">
+					<div class="card-header">
+						<img src="img/can.png" alt="Refrigerantes">
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#Refrigerantes">Refrigerantes</a>
+						</h4>
+						<!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  		<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Espetinhos">Espetinhos</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-8.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Espetinho de legumes</strong>
+						<p>Pimentão, abobora e outras especiarias.</p>
+						<h6 class="card-text">R$ 12,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Espetinho de legumes"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Use espeto ou grelha para os assar. Asse até que os legumes fiquem tenros, mas que não se desmanchem.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-14.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Espetinho de legumes e tofu</strong>
+						<p>Couve flor, tomate, tofu e manga.</p>
+						<h6 class="card-text">R$ 7,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Espetinho de legumes e tofu"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Use espeto ou grelha para os assar. Asse até que os legumes fiquem tenros, mas que não se desmanchem.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-15.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Espetinho de legumes e
+							cogumelo </strong>
+						<p>Pimentão, abobora, manga e cogumelo.</p>
+						<h6 class="card-text">R$ 8,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1"
+							title="Espetinho de legumes e cogumelo paris</strong>
+                    <p>Pimentão, abobora, manga e cogumelo."
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 5 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 unidade</i><br><br>
+                    <strong>Peso:</strong><p>150 gramas</p>
+                    <strong>Calorias:</strong><p>100Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Use espeto ou grelha para os assar. Asse até que os legumes fiquem tenros, mas que não se desmanchem.</p>
+                    <button class='btn btn-outline-danger btn-sm'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Hamburgueres">Hambúrgueres</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-12.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Hambúrguer de pão preto</strong>
+						<p>Tomate, abobrinha e outras especiarias.</p>
+						<h6 class="card-text">R$ 15,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Hambúrguer de pão preto"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-3.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Sanduíche natural</strong>
+						<p>Patê de jaca, tomate, cenoura e alface.</p>
+						<h6 class="card-text">R$ 7,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Sanduíche natural"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-1.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Hambúrguer de grão de bico</strong>
+						<p>Hambúrguer de grão de bico e salada verde.</p>
+						<h6 class="card-text">R$ 8,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1"
+							title="Hambúrguer de grão de bico com azeitonas e salada verde</strong>
+                    <p>Pimentão, abobora e outras especiarias."
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 5 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 unidade</i><br><br>
+                    <strong>Peso:</strong><p>150 gramas</p>
+                    <strong>Calorias:</strong><p>100Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Bolinhos">Bolinhos</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-28.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Croquete de Soja Assado</strong>
+						<p>farinha de milho, pimentão e outras especiarias.</p>
+						<h6 class="card-text">R$ 4,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Croquete de Soja Assado"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Use espeto ou grelha para os assar. Asse até que os legumes fiquem tenros, mas que não se desmanchem.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-29.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Bolinho de cenoura e tofu</strong>
+						<p>Cebolinha picada, tofu, azeite e sal.</p>
+						<h6 class="card-text">R$ 3,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Bolinho de cenoura e tofu"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-30.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Bolinho de Falafel e Molho de
+							Tahine</strong>
+						<p>Grão-de-bico, sementes de cominho e coentro.</p>
+						<h6 class="card-text">R$ 2,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1"
+							title="Bolinho de Falafel e Molho de Tahine</strong>
+                    "
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 5 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 unidade</i><br><br>
+                    <strong>Peso:</strong><p>150 gramas</p>
+                    <strong>Calorias:</strong><p>100Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Sopas">Sopas</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-16.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Sopa de legumes</strong>
+						<p>Pimentão, abobora e outras especiarias.</p>
+						<h6 class="card-text">R$ 6,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Sopa de legumes"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-19.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Sopa de cenoura</strong>
+						<p>Patê de jaca, tomate, tofu e cenoura.</p>
+						<h6 class="card-text">R$ 7,00</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Sopa de cenoura"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 4 porções</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-17.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Sopa de tofu</strong>
+						<p>Tofu, batatinhas fritas, manjericão e abobora.</p>
+						<h6 class="card-text">R$ 8,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1"
+							title="Sopa de tofu</strong>
+                  "
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> 5 min </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 3 unidade</i><br><br>
+                    <strong>Peso:</strong><p>150 gramas</p>
+                    <strong>Calorias:</strong><p>100Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
+                    <button class='btn btn-outline-danger btn-sm'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Sucos">Sucos</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-21.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Suco de menta</strong>
+						<p>Poupa de maçã e folhas de mentas</p>
+						<h6 class="card-text">R$ 8,90</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Suco de menta"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> Agite para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 </i><br><br>
+                    <strong>Peso:</strong><p>250 ml</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se. </p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-22.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Suco de melancia</strong>
+						<p>Poupa de melancia e suco de maçã.</p>
+						<h6 class="card-text">R$ 5,50</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Suco de menta"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> Agite para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 </i><br><br>
+                    <strong>Peso:</strong><p>250 ml</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se. </p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-24.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Suco de limão</strong>
+						<p>Suco de limão extra forte e suco de maçã</p>
+						<h6 class="card-text">R$ 7,99</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1"
+							title="Suco de limão</strong>
+                    "
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'>Agite para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 unidade</i><br><br>
+                    <strong>Peso:</strong><p>250 ml</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se. </p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<article class="tcenter">
+			<h2 class="sobre">
+				<a id="Refrigerantes">Refrigerantes</a>
+			</h2>
+			<hr style="margin-bottom: 30px;">
+		</article>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-25.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Refrigerante de guaraná</strong>
+						<p>Natural, zero sódio, sem conservantes.</p>
+						<h6 class="card-text">R$ 5,50</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Refrigerante de guaraná"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> Agitar para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 lata</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-26.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Refrigerante de laranja</strong>
+						<p>Natural, zero sódio, sem conservantes.</p>
+						<h6 class="card-text">R$ 5,50</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Refrigerante de laranja"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> Agitar para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 lata</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card card-size" style="width: 14rem;">
+					<img class="card-img-top" src="img/img-27.jpg" alt="Card image cap">
+					<div class="card-body">
+						<strong class="card-title">Refrigerante de cola</strong>
+						<p>Natural, zero sódio, sem conservantes.</p>
+						<h6 class="card-text">R$ 5,50</h6>
+						<button class="btn btn2 btn-info btn-sm" data-html="true"
+							data-toggle="popover1" title="Refrigerante de cola"
+							data-content="
+                    <i class='fa fa-clock-o' aria-hidden='true'> Agitar para consumir </i>
+                    <i class='fa fa-cutlery' aria-hidden='true'> 1 lata</i><br><br>
+                    <strong>Peso:</strong><p>70 gramas</p>
+                    <strong>Calorias:</strong><p>40Kcal cada</p>
+                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se.</p>
+                    <button class='btn btn-outline-danger btn-sm text-center'>Comprar</button>">
+							Detalhes</button>
+						<a class="popup btn btn2 btn-danger btn-sm" data-toggle="modal"
+							data-target="#myModal">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+  	</main>
+	<footer>
+		<br>
+		<div class="redes">
+			<a class="twitter" href="https://facebook.com/açogano"><img src="img/twitter.png" alt="Twitter"></a>
+			<a class="fb" href="https://facebook.com/açogano"><img src="img/facebook.png" alt="Facebook"></a>
+			<a class="insta" href="https://instagram.com/açogano"><img src="img/instagram.png" alt="Instagram"></a>
+		</div>	
+		<div class="section2">
+		  <article class="tcenter">
+			<h2 class="sobrefooter">Receba nossas novidades</h2>
+			<hr>
+			<p>Envie seu email abaixo para o Açogano, por favor.</p>
+		  </article>
+			<form class=" tcenter">
+			  <div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6 tcenter">
+				  <div class="input-group">
+					<input type="email" class="form-control" placeholder="Digite seu email">
+					<span class="input-group-btn">
+					  <button type="submit" class="btn btn-primary" style="background:#2d2d2d; border: none; font-size:12px; padding-left:60px; padding-right:60px;">Submeter</button>
+					</span>
+				  </div>
+				</div>
+			  </div>
+			</form>
+		</div>
+	</footer>
+	<div class="final">
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<ul>
+					<li>Formas de pagamento</li>
+					<li class="icon-payment">
+						<li class="fa fa-cc-visa fa-2x"></li>
+					<li class="icon-payment"></li>
+						<li class="fa fa-cc-mastercard fa-2x"></li>
+					<li class="icon-payment"></li>
+					<li class="fa fa-cc-amex fa-2x"></li>
+					<li class="icon-payment"></li>
+					<li class="fa fa-credit-card fa-2x"></li>
+				</ul>
+				©2017 | Açogano | Todos os direitos reservados
+			</div>
+		</div>
+	</div>
+	
+  	<!-- Bootstrap/JS -->
+    <!-- Bootstrap 4.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
+
+    <script type="text/javascript">
+    $('[data-toggle="popover"]').popover({
+      placement:"bottom",
+      trigger:"hover",
+    });
+    $('[data-toggle="popover1"]').popover({
+    placement:"left",
+  });
+    </script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>

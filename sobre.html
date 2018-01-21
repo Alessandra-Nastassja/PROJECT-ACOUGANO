@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Açogano | Açogano</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Um açougue totalmente vegano online para você!">
+	<meta name="keywords" content="Açougue, veganismo">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="author" content="Equipe Innolume">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/apple.png" type="image/x-icon">
+	<link rel="icon" href="img/apple.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Bootstrap/CSS -->
+	<!-- Bootstrap 4.0 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+</head>
+<body>	
+	<div class="mobile-display" >
+		<h2 class="site-title">
+			<a href="#">
+				<img src="img/logonovo.png" alt="Açogano">
+			</a>
+		</h2>
+	</div>
+	<header>
+	<div id="content">
+      <!-- Modal do Login-->
+      <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-5">
+                         <div class="col-sm-12 card" style="width: 20rem; border:none;">
+                          <img class="imagemodal" src="img/modal.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="col-md-7 ml-auto">
+                        <h4 class="modal-title tcenter">AÇOUGANO</h4><br>
+                        <p class="tcenter">Entre para começar </p>
+                        <form>
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Senha">
+                          </div>
+                         
+                         <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                              Manter conectado
+                            </label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-info btn-block">Entrar</button>
+                            </div>
+                          </div>
+                          </div>
+                          <br>
+                          <p class="tcenter">- OU -</p>
+                          <div class="col-md-12 posicao">
+                            <button type="submit"  class="btn btn-primary btn-block">Facebook</button><br>
+                            <button type="submit"  class="btn btn-danger btn-block">Google</button><br>
+                            <!--a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a-->
+                          </div>
+                          <a class="popup" href="#">Esqueceu sua senha</a><br>
+                          <a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a>
+                        </form>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.container-fluid -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->  
+
+      <!-- Modal do Cadastro-->
+      <div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-5">
+                         <div class="col-sm-12 card" style="width: 20rem; border:none;">
+                          <img class="imagemodal" src="img/modal.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="col-md-7 ml-auto">
+                        <h4 class="modal-title tcenter">AÇOUGANO</h4><br>
+                        <p class="tcenter"> Cadastre-se para começar</p>
+                        <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Digite seu nome">
+                          </div>
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Digite seu email">
+                          </div>
+                          <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Digite sua senha">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirme sua senha">
+                            </div>
+                          </div>
+                          </div>
+                          <br>
+                          <div class="col-md-12">
+                            <button type="submit" class="btn btn-info btn-block tcenter">Cadastrar</button><br>
+                          </div>
+                          <p class="tcenter">- OU -</p>
+                          <div class="col-md-12 posicao">
+                            <button type="submit"  class="btn btn-primary btn-block">Facebook</button><br>
+                            <button type="submit"  class="btn btn-danger btn-block">Google</button><br>
+                            <!--a class="popup" data-toggle="modal" data-target="#myModal2">Ainda não tenho cadastro</a-->
+                          </div>
+                          <a class="popup" data-toggle="modal" data-target="#myModal">Já tenho cadastro</a>
+                        </form>
+                      </div>
+                    </div><!-- /.row -->
+                  </div><!-- /.container-fluid -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+		  </div><!-- /.modal --> 
+		</div>		
+		<nav>
+			<a href="#" class="toggle-menu">&#9776;</a>
+			<ul class="nav-list nav-open" id="nav">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="loja.html">Loja</a></li>
+				<li><a href="sobre.html">Sobre nós</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li class="has-logo"><a href="#">
+					<h2 class="site-title">
+						<img src="img/logonovo.png" alt="Açogano">
+					</h2>
+				</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal">Login</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal2">Registre-se</a></li>
+				<li><a href="carrinho.html"><img src="img/icon-cart.svg" alt="" /> Meu carrinho (0)</a></li>
+			</ul>
+		</nav>
+	</header>	
+	<div id="topo2">
+	</div>
+	<main>
+		<div class="container">
+			<div class="sobrenos">
+				<h2 class="sobre">História do Açogano</h2>
+				<hr style="margin-bottom:30px;">
+				<p class="sobrea">
+					O veganismo consiste, de acordo com a Sociedade Vegana (2011), em um modo de vida que busca eliminar toda e qualquer forma de exploração animal não apenas da alimentação, mas também de outros aspectos da vida como vestuário, cosméticos, trabalho, entretenimento – eventos que façam uso de animais como forma de atração principal - e diversos outros. O principal objetivo desta prática é evitar que animais continuem sendo explorados e maltratados a fim de serem aproveitados para fins lucrativos. Além disso, de acordo com o American Vegan (2015), o veganismo é benéfico para o meio ambiente, já que “a produção animal é o maior contribuinte para a destruição ambiental”. Este estilo de vida prioriza em sua dieta uma alimentação balanceada com leguminosas, sementes, vegetais, cereais, entre outros. No entanto, existem barreiras presentes no dia a dia que dificultam o acesso a este tipo de alimentação, já que a produção de produtos para consumo sem origem animal ainda é escassa. Outro fator é a falta de canais eletrônicos que priorizam essa filosofia de vida, sendo que o comércio eletrônico (CE), também conhecido como e-commerce, é uma ferramenta que vem crescendo no mercado da tecnologia da informação, graças a fatores como: facilidade em se obter planos de banda larga, acesso maior a dispositivos eletrônicos e comodidade aos seus usuários. Com isso, Alessandra, Débora e Marina decidiram criar o Açogano, um comércio eletrônico totalmente vegano com produtos criativos para uma dieta completa e saudável.
+				</p>
+			</div>
+		</div>
+		<br>
+		<div class="quemsomos">
+			<div class="container">
+				<div class="sobrenos">
+					<h2 class="sobre" style="color:#fff;">Quem somos</h2>
+					<hr>
+					<div class="row">
+					  <div class="fundo"><img src="img/alessandra.jpg" class="img-fluid fotos" alt="...">
+					  <p class="descri">Alessandra</p>
+					  <p class="descri2">Co-fundadora</p>
+					  </div>
+					  <div class="fundo"><img src="img/debora.jpg" class="img-fluid fotos" alt="...">
+					  <p class="descri">Débora Ferreira</p>
+					  <p class="descri2">Sócia</p></div>
+					  <div class="fundo"><img src="img/marina.jpg" class="img-fluid fotos" alt="...">
+					  <p class="descri">Marina</p>
+					  <p class="descri2">Fundadora</p></div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<section style="background:#fff; padding-top: 62px; padding-bottom: 45px;">	
+			<div class="container">
+				<h2 class="sobre" style="margin-top:-50px;">O QUE NOS DIFERENCIA?</h2>
+				<hr style="margin-bottom:40px;">
+				<div class="row">
+					<div class="col-xs-12">
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+						<div class="icon">
+							<img src="img/tomato.png" style="margin-top:-6px; margin-left:-1px;" alt="PRODUTOS CONFIÁVEIS">&nbsp;
+							</div>
+							<h5 class="title">PRODUTOS CONFIÁVEIS</h5>
+							<p class="content">Nossos produtos são selecionados com cuidado, com o intuito de oferecer as melhores e mais saudáveis opções de pratos para nossos clientes.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+							<div class="icon">
+							<img src="img/coconut.png" style="margin-top:-6px; margin-left:-1px;" alt="100% VEGANOS">&nbsp;
+							</div>
+							<h5 class="title">100% VEGANOS</h5>
+							<p class="content">No Açogano os veganos podem comprar tranquilos, todos os produtos são 100% veganos, produzidos com carinho pensando sempre no melhor dos clientes</p></div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+							<div class="icon">
+							<img src="img/man-user.png" style="margin-top:-6px; margin-left:-1px;" alt="NUTRICIONISTAS ESPECIALIZADOS">&nbsp;
+							</div>
+							<h5 class="title">NUTRICIONISTAS ESPECIALIZADOS</h5>
+							<p class="content">Nossa cozinha é repleta de cozinheiros e nutricionistas especializados em dietas veganas, que fiscalizam e preparam tudo com extremo zelo</p></div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+							<div class="icon">
+							<img src="img/coin.png" style="margin-top:-6px; margin-left:-1px;" alt="PREÇOS ACESSÍVEIS">&nbsp;
+							</div>
+							<h5 class="title">PREÇOS ACESSÍVEIS</h5>
+							<p class="content">Sabemos que muita das vezes alimentos veganos chegam a ser muito caros, por isso o Açogano disponibiliza pratos baratos, mas completos para sua refeição</p></div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+							<div class="icon">
+							<img src="img/delivery-truck.png" style="margin-top:-6px; margin-left:-1px;" alt="ENTREGA RÁPIDA">&nbsp;
+							</div>
+							<h5 class="title">ENTREGA RÁPIDA</h5>
+							<p class="content">Faça seu pedido e o receba rapidamente em casa. Nosso delivery é de rápida entrega para que sua comida chegue fresquinha</p></div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 col-sm-half">
+						<div class="service-inline" style="margin-bottom: 25px;">
+							<div class="icon">
+							<img src="img/grapes.png" style="margin-top:-6px; margin-left:-1px;" alt="VIDA SAUDÁVEL E PLENA">&nbsp;
+							</div>
+							<h5 class="title">VIDA SAUDÁVEL E PLENA</h5>
+							<p class="content">Torne sua vida mais simples e saudável adquirindo nossos deliciosos produtos. São diversas opções para compor sua dieta vegana!</p></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<br>
+		<div class="redes">
+			<a class="twitter" href="https://facebook.com/açogano"><img src="img/twitter.png" alt="Twitter"></a>
+			<a class="fb" href="https://facebook.com/açogano"><img src="img/facebook.png" alt="Facebook"></a>
+			<a class="insta" href="https://instagram.com/açogano"><img src="img/instagram.png" alt="Instagram"></a>
+		</div>	
+		<div class="section2">
+		  <article class="tcenter">
+			<h2 class="sobrefooter">Receba nossas novidades</h2>
+			<hr>
+			<p>Envie seu email abaixo para o Açogano, por favor.</p>
+		  </article>
+			<form class=" tcenter">
+			  <div class="row">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6 tcenter">
+				  <div class="input-group">
+					<input type="email" class="form-control" placeholder="Digite seu email">
+					<span class="input-group-btn">
+					  <button type="submit" class="btn btn-primary" style="background:#2d2d2d; border: none; font-size:12px; padding-left:60px; padding-right:60px;">Submeter</button>
+					</span>
+				  </div>
+				</div>
+			  </div>
+			</form>
+		</div>
+	</footer>
+	<div class="final">
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<ul>
+					<li>Formas de pagamento</li>
+					<li class="icon-payment">
+						<li class="fa fa-cc-visa fa-2x"></li>
+					<li class="icon-payment"></li>
+						<li class="fa fa-cc-mastercard fa-2x"></li>
+					<li class="icon-payment"></li>
+					<li class="fa fa-cc-amex fa-2x"></li>
+					<li class="icon-payment"></li>
+					<li class="fa fa-credit-card fa-2x"></li>
+				</ul>
+				©2017 | Açogano | Todos os direitos reservados
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap/JS -->
+    <!-- Bootstrap 4.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
+
+    <script type="text/javascript">
+		  $("#carousel").carousel({
+			interval: 5000,
+		  });
+		$('[data-toggle="popover"]').popover({
+		  placement:"bottom",
+		  trigger:"hover",
+		});
+		$('[data-toggle="popover1"]').popover({
+		placement:"left",
+	  });
+    </script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,965 @@
+
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		   MODIFICADO
+		*/
+		html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, 
+		a, ul, li, article, aside, footer, header, nav, section {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 display-role reset for older browsers */
+		article, aside, footer, header, nav, section {
+			display: block;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		
+/*MENU*/
+
+a:link, a:visited {
+	color: #555;
+	transition: .2s color ease-in-out;
+}
+
+a:hover, a:active {
+	color: #87986a;
+	text-decoration: none;
+}
+
+
+/*styling the header part*/
+.toggle-menu{
+	display: none;
+}
+header{
+	margin:35px 55px 50px 55px;
+}
+.site-title img{
+	max-width: 220px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav-list{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	white-space: nowrap;
+}
+.nav-list > li {
+	position: relative;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 550;
+	letter-spacing: .1em;
+}
+
+.nav-list>li:not(.has-logo)>a{
+	text-transform: uppercase;
+	display: block;
+	padding:1rem;
+}
+
+.nav-list a:hover {
+	text-decoration:none;
+	color:#749b54;
+}
+
+
+.mobile-display{
+	display: none;
+}
+
+@media only screen and (max-width: 1050px){
+	html{
+		font-size: 13px;
+	}
+	body{
+		width: 100%;
+	}
+	
+	.has-logo{
+		display: none;
+	}
+	.mobile-display{
+		display: block;
+		margin:2rem auto;
+		text-align: center
+	}
+}
+
+@media only screen and (max-width: 764px){
+	html{
+		font-size: 6px;
+	}
+	body{
+		width: 100%;
+	}
+	
+	.has-logo{
+		display: none;
+	}
+	.mobile-display{
+		display: block;
+		text-align: center;
+		
+	}
+}
+
+@media only screen and (max-width:680px){
+	html{
+		font-size: 15px;
+	}
+	
+	.site-title img{
+		max-width: 200px;
+		display: inline-block;
+		vertical-align: right;
+	}
+	.toggle-menu{
+		display: block;
+		max-width: -webkit-min-content;
+		max-width: -moz-min-content;
+		max-width: min-content;
+		margin: 1rem auto;
+		background-color: #87986a;
+		text-align: center;
+		color: #fff !important;
+		padding: 15px 20px 15px 20px;
+		border: .25em;
+
+	}
+
+	.toggle-menu:hover{text-decoration:none;}
+
+	.nav-list{
+		display: block;
+		width: 100%;
+		position: static;
+		line-height: 1rem;
+		z-index: 1012;
+		left: 0;
+		top:0;
+		background-color: #fff;
+		
+		max-height: 0;
+		overflow: hidden;
+	
+	}
+
+	.active{
+		max-height: 100%;
+		overflow: auto;
+	}
+
+
+
+}
+
+/*FIM DO MENU */
+
+/*TOPO*/
+
+#topo {
+	height: 445px; 
+	width:100%;
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/03/header.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+
+#topo2 {
+	height: 445px; 
+	width:100%;
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header2.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+
+#topo3 {
+	height: 445px; 
+	width:100%;
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header3.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+
+#topo4 {
+	height: 445px; 
+	width:100%;
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header4.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+
+
+
+@media all and (max-width: 950px) {
+	#topo {
+	height: 250px; 
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/03/header.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+}
+
+@media all and (max-width: 950px) {
+	#topo2 {
+	height: 250px; 
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header2.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+}
+
+@media all and (max-width: 950px) {
+	#topo3 {
+	height: 250px; 
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header3.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+}
+
+@media all and (max-width: 950px) {
+	#topo4 {
+	height: 250px; 
+	background: #; 
+	margin-top:-30px;
+	background: url("http://ap.imagensbrasil.org/images/2017/11/09/header4.jpg") no-repeat fixed;
+	background-position: center top; 	
+	position: relative;
+}
+}
+
+
+
+/*FIM DO TOPO*/
+
+/* (MAIN) SECTION */
+
+.section1{
+	background: #eee;
+	color:#fff;
+}
+.section1 article h2{
+	border-bottom:1px solid #fff;
+	line-height:40px;
+	letter-spacing:5px;
+	padding-bottom:25px;
+	margin-bottom:25px;
+}
+
+.section2{
+	padding: 50px 0px;
+	color:#87986a;
+}
+
+
+.card-title a {
+	color: #fff !important;
+}
+
+.card-size {
+	margin: 5px 50px 5px 40px;
+	color: #000;
+}
+
+.card-size p {
+	font-size: 13px;
+}
+
+.card-size2 {
+	margin: 5px 5px 5px 18px;
+}
+
+.card-size3 {
+	color: #000;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+
+.card-size3 .popup {
+	color: #fff;
+}
+
+.avatar {
+	width: 60%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.card-avatar {
+	border-radius: 15px;
+	border-color: #fff;
+	background: rgba(0, 0, 0, 0.1);
+	padding-bottom: 10px;
+	margin: 5px 40px 5px 40px;
+}
+
+.titlecard {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.tcenter {
+	text-align: center;
+}
+
+.bottom-position {
+	margin: 0px 5px 0px 5px;
+}
+
+.carousel-position {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+.card-title a {
+	color: #fff !important;
+}
+
+.card-title a:hover {
+	text-decoration:none;
+}
+
+.card-size{
+	margin: 5px 65px 5px 65px;
+	color: #333;
+}
+.card-size2{
+	margin: 5px 5px 5px 18px; 
+	
+}
+.card-size p{font-size: 13px;}
+
+.avatar{width: 60%; padding-bottom: 15px; padding-top: 15px;}
+.card-avatar{border-radius: 15px; border-color: #fff; background: rgba(0,0,0,0.1);padding-bottom: 10px; margin: 5px 40px 5px 40px;}
+
+.titlecard {
+	font-family:'Montserrat', sans-serif;
+	text-transform:uppercase;
+	font-size:13px;
+}
+
+
+.row{margin: 10px 20px 10px 10px !important;}
+.row .col-sm-4{padding-right: 0px !important; padding-left: 0px !important;}
+.row .col-sm-6{padding-right: 0px !important; padding-left: 0px !important;}
+.row .col-sm-2{padding-right: 0px !important; padding-left: 0px !important;}
+.tcenter{ text-align:center;}
+
+
+.rede i{font-size: 40px;}
+
+.sobre {
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	color:#87986a;
+	font-size:28px;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding: 40px 0px 15px 0px;
+	line-height: 1.1; 
+}
+.quemsomos {
+	padding:20px 0px 70px 0px;
+	background: #87986a;
+	color:#fff;
+	margin-top:0px;
+	z-index:1000;
+}
+.container {
+	width:1500px;
+}
+.sobrenos {
+	width:100%;
+
+}
+.fundo {
+	background:#fff;
+	width:280px;
+	height:360px;
+	margin: 0 auto;
+	margin-top:40px;
+}
+.descri {
+	font-family:'Montserrat', sans-serif;
+	color:#87986a;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:center;
+	padding:12px;
+	font-size:15px;
+}
+
+.descri2 {
+	font-family:'Montserrat', sans-serif;
+	color:#3a3a3a;
+	text-transform:uppercase;
+	text-align:center;
+	margin-top:-30px;
+	font-size:13px;
+}
+hr {
+	height:10px; 
+	width:250px;
+	border:none; 
+	color:#dfdfdf; 
+	background-color:#c4c4c5; 
+}
+.icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #000;
+    font-size: 25px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    line-height: 58px;
+    color: #fff;
+    padding-left: 10px;
+   }
+.icon-left{
+	width: 45px !important;
+	height: 50px;
+	background-color: #000;
+	border-radius: 100%;
+	margin-left: 5%;
+	margin-top: 10%;
+
+}
+.icon-right{
+	width: 45px !important;
+	height: 50px;
+	background-color: #000;
+	border-radius: 100%;
+	margin-right: 5%;
+	margin-top: 10%;
+}
+#box-carousel{
+	width: 100%;
+	text-align: center;
+}
+
+.bg-green{
+	background: #eee !important;
+	color: #fff !important;
+}
+.categorias{
+	color: #000;
+	border-radius: none !important;
+}
+.categorias:hover{
+	background-color: #53253C !important;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
+
+
+.btn2{
+	width: 80px !important;
+	margin-left: 5px !important;
+}
+.btn3{
+	width: 50px !important;
+}
+.btn4{
+	width: 100px !important;
+	margin-left: 10px !important;
+}
+
+.btnAdicionar{
+	margin-left: 30px;
+	margin-bottom: 50px;
+}
+.tamanho{
+	width: 100px;
+}
+
+.popup{padding-left: 10px;}
+.user{font-size: 25px;} 
+
+
+
+/*FOOTER*/
+
+footer {
+	height: 330px; 
+	background: url("http://ap.imagensbrasil.org/images/2017/11/03/footer.png") no-repeat fixed ;
+	background-position: center bottom;
+	position: relative;
+	background-color:#eeeeee;
+}
+
+.final {
+	width:100%;
+	background-color:#fff;
+	margin: 0 auto;
+	padding:25px;
+	font-family:'Montserrat', sans-serif;
+	color:#404040;
+	text-transform:uppercase;
+	letter-spacing: .2em;
+	font-size:13px;
+	text-align:center;
+}
+
+.icon-payment{
+	display:inline;
+	margin-left:10px;
+}
+
+
+.btn-primary {
+	width:100%;
+	height:72px;
+	background-color:#000;
+	border:none;
+	color:#fff;
+	text-transform:uppercase;
+	font-family:'Montserrat', sans-serif;
+}
+
+.form-control{
+	width:80%;
+	height:72px;
+	border:none;
+	margin-left:2px;
+}
+
+.emailc:hover {
+	border: 1px #eeeeee;
+}
+
+.redes {
+	width:150px;
+	top:-10px;
+	left:-190px;
+	font-family:'Poppins', sans-serif;
+	position:relative;
+	margin: 0 auto; 
+	color:#fff;
+}
+
+.twitter {
+	width:40px;
+	height:40px;
+	margin-top:28px;
+	margin-left:200px;
+	position:absolute;
+	background: rgba(0,0,0,0.2);
+	-webkit-transition:All 0.6s ease-in-out; 
+	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.twitter:hover {
+	background: #51b3e0; -webkit-transition:All 0.6s ease-in-out; -moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.twitter a {
+	background: rgba(180,180,180,.7); 
+	width: 40px; 
+	margin-top: 12px; 
+	margin-right: 30px; 
+	float: left; 
+	height: 40px; 
+	display: inline-block; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+
+.fb {
+	width:40px;
+	height:40px;
+	margin-top:28px;
+	margin-left:245px;
+	position:absolute;
+	background: rgba(0,0,0,0.2);
+	-webkit-transition:All 0.6s ease-in-out; 
+	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.fb:hover {
+	background: #415e9b; 
+	-webkit-transition:All 0.6s ease-in-out; -moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;}
+
+.fb a {
+	background: rgba(180,180,180,.7); 
+	width: 40px; 
+	margin-top: 12px;
+	margin-right: 30px; 
+	float: left; 
+	height: 40px; 
+	display: inline-block; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+.insta {
+	width:40px;
+	height:40px;
+	margin-top:28px;
+	margin-left:290px;
+	position:absolute;
+	background: rgba(0,0,0,0.2);
+	-webkit-transition:All 0.6s ease-in-out; 
+	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.insta:hover {
+	background: #b2755c ; -webkit-transition:All 0.6s ease-in-out; -moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.insta a {
+	background: rgba(180,180,180,.7);
+	width: 40px; 
+	margin-top: 12px; 
+	margin-right: 30px; 
+	float: left; 
+	height: 40px; 
+	display: inline-block;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.sobrenos {
+	width:100%;
+}
+
+.sobrea {
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	line-height: 1.7;
+	text-align:justify;
+}
+
+article p {
+	font-family:'Montserrat', sans-serif; 
+	color:#7e7d7d; 
+	letter-spacing: .1em; 
+	font-size:15px;
+}
+
+
+.sobrefooter {
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	color:#87986a;
+	font-size:28px;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding: 40px 0px 15px 0px;
+	line-height: 1.1; 
+}
+
+@media only screen and (max-width: 980px){
+	footer {
+		height: 300px; 
+		background: url("http://ap.imagensbrasil.org/images/2017/11/03/footer.png") no-repeat fixed ;
+		background-position: center bottom;
+		background-color: #eeeeee;
+		position: relative;
+	}
+	.sobrefooter {
+		text-align:center;
+		font-family: 'Montserrat', sans-serif;
+		color:#87986a;
+		font-size:20px;
+		text-transform:uppercase;
+		font-weight:bold;
+		padding: 25px 0px 10px 0px;
+		line-height: 1.1; 
+	}
+	article p {
+		font-family:'Montserrat', sans-serif; 
+		color:#7e7d7d; 
+		font-size:15px;
+	}
+	.form-control{
+		width:80%;
+		height:60px;
+		border:none;
+		margin-left:2px;
+	}
+	.btn-primary {
+		width:100%;
+		height:60px;
+		background-color:#000;
+		border:none;
+		color:#fff;
+		text-transform:uppercase;
+		font-family:'Montserrat', sans-serif;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	footer {
+		height: 300px; 
+		background: url("http://ap.imagensbrasil.org/images/2017/11/03/footer.png") no-repeat fixed ;
+		background-position: center bottom;
+		background-color: #eeeeee;
+		position: relative;
+	}
+	.sobrefooter {
+		text-align:center;
+		font-family: 'Montserrat', sans-serif;
+		color:#87986a;
+		font-size:20px;
+		text-transform:uppercase;
+		font-weight:bold;
+		padding: 25px 0px 10px 0px;
+		line-height: 1.1; 
+	}
+	article p {
+		font-family:'Montserrat', sans-serif; 
+		color:#7e7d7d; 
+		font-size:13px;
+	}
+	.form-control{
+		width:80%;
+		height:45px;
+		border:none;
+		margin-left:2px;
+	}
+	.btn-primary {
+		width:100%;
+		height:45px;
+		background-color:#000;
+		border:none;
+		color:#fff;
+		text-transform:uppercase;
+		font-family:'Montserrat', sans-serif;
+	}
+}
+/*FIM FOOTER*/
+
+/*CONTATO*/
+.content-contact{
+	margin-bottom:30px;
+}
+.content-contact h3{
+	color:#87986a;
+}
+
+.banner-contact{
+	background:url(../img/espeto2.jpg) no-repeat fixed;
+	height: 400px; 
+	width:100%;
+	background: #; 
+	margin-top:-30px;
+	background-position: center top; 	
+	position: relative;
+	opacity:0.80;
+	-moz-opacity:0.80;
+	filter: alpha(opacity=80);
+}
+.text_banner{
+	position:absolute;
+	top:100px;
+    left:30%;
+    z-index:10;
+    padding-bottom:10px;
+    color: #fff;
+    text-align: center;
+	font-size:60px;
+}
+@media all and (max-width: 950px) {
+	.text_banner{ 
+	font-size:45px;
+	position:absolute;
+	top:80px;
+    left:18%;
+    z-index:10;
+    padding-bottom:10px;
+    color: #fff;
+    text-align: center;
+    }
+}
+.contact{
+	 margin-top:-30px;
+	 margin-bottom:25px;
+	 text-align:center;
+ }	 
+
+.input-contact{
+  padding-left:50px;
+}
+#btn-contact{
+	background-color:#6aa955;
+	color: #fff;
+}
+.form-control:focus {
+	border-color:#6d1a37;	
+}
+
+#mensagem{
+  height:100px;	
+}
+.information_contact{
+	text-align:center;
+	padding-top:130px;
+}
+
+/*SOBRE NÓS*/
+
+.fotos {
+	width:280px;
+	height:300px;
+
+}
+
+.fotos:hover {
+	opacity:0.2;
+	-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: 
+all 1s ease; transition: all 1s ease;
+}
+
+.fundo {
+	background:#fff;
+	width:280px;
+	height:360px;
+	margin: 0 auto;
+	margin-top:40px;
+}
+.descri {
+	font-family:'Montserrat', sans-serif;
+	color:#87986a;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:center;
+	padding:12px;
+	font-size:15px;
+}
+
+.descri2 {
+	font-family:'Montserrat', sans-serif;
+	color:#3a3a3a;
+	text-transform:uppercase;
+	text-align:center;
+	margin-top:-30px;
+	font-size:13px;
+}
+
+.caixinha{margin-left: 505px; margin-top: -5px; font-family: verdana; 
+font-size: 9px; padding: 8px; text-align: left; position: absolute; 
+-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: 
+all 1s ease; transition: all 1s ease; opacity: 0; background: #ffffff; 
+-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+
+.service-inline {
+    position: relative;
+    padding-left: -20px;
+}
+
+.service-inline .icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #000;
+    font-size: 25px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    line-height: 58px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.service-inline .icon:hover {
+
+    background-color: #e3b3a9;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
+
+.content {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	margin-left:68px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+
+}
+
+.title {
+    font-size: 20px;
+	margin-left:68px;
+	font-family: "Montserrat", arial, tahoma;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#87986a;
+}
+
+/*FIM SOBRE NÓS*/
