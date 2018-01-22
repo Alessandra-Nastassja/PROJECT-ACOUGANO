@@ -715,7 +715,7 @@ article p {
 @media only screen and (max-width: 980px){
 	footer {
 		height: 300px; 
-		background: url("..img/footer.png") no-repeat fixed ;
+		background: url("../img/footer.png") no-repeat fixed ;
 		background-position: center bottom;
 		background-color: #eeeeee;
 		position: relative;
@@ -755,7 +755,7 @@ article p {
 @media only screen and (max-width: 480px){
 	footer {
 		height: 300px; 
-		background: url("img/footer.png") no-repeat fixed ;
+		background: url("../img/footer.png") no-repeat fixed ;
 		background-position: center bottom;
 		background-color: #eeeeee;
 		position: relative;
