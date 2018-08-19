@@ -21,6 +21,12 @@
 	<link rel="icon" href="img/apple.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<!-- Altera e Diminui fonte-->
+	<script type="text/javascript" src="js/fonte.js"></script>
+
+	<!-- Auto contraste -->
+	<link rel="stylesheet" href="css/contraste.css">
+
 	<!-- Bootstrap/CSS -->
 	<!-- Bootstrap 4.0 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -32,6 +38,31 @@
 				<img src="img/logonovo.png" alt="Açogano">
 			</a>
 		</h2>
+	</div>
+	<div class="acessibilidade">
+		<div class="content10">
+		<div class="menu-acessibilidade">
+			<div class="menu-esquerda">
+				<a href="#menu" accesskey="1" tabindex="1" class="acessibilidade">
+					<span>1.Ir para o menu</span>
+				</a>
+				<a href="#conteudo" accesskey="2" tabindex="2" class="acessibilidade">
+					<span>2. Ir para o conteúdo</span>
+				</a>
+			</div>
+			<div class="menu-direita">
+				<a href="#"  onClick="fonte('a');" tabindex="3" class="acessibilidade">
+					<span>A+</span>
+				</a>
+				<a href="#" onClick="fonte('d');" tabindex="4" class="acessibilidade">
+					<span>a-</span>
+				</a>
+				<a id="altocontraste" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" tabindex="5">
+					Alto contraste
+				</a>
+			</div>
+		</div>
+		</div>
 	</div>
 	<header>
 		<div id="content">
@@ -154,18 +185,18 @@
 		<nav>
 			<a href="#" class="toggle-menu">&#9776;</a>
 			<ul class="nav-list nav-open" id="nav">
-				<li><a href="index.html">Início</a></li>
-				<li><a href="sobre.html">Sobre nós</a></li>
-				<li><a href="loja.html">Loja</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="index.html" id="menu" tabindex="6">Início</a></li>
+				<li><a href="sobre.html" tabindex="7">Sobre nós</a></li>
+				<li><a href="loja.html" tabindex="8">Loja</a></li>
+				<li><a href="contato.html" tabindex="9">Contato</a></li>
 				<li class="has-logo"><a href="#">
 					<h2 class="site-title">
 						<img src="img/logonovo.png" alt="Açogano">
 					</h2>
 				</a></li>
-				<li><a class="popup" data-toggle="modal" data-target="#myModal">Login</a></li>
-				<li><a class="popup" data-toggle="modal" data-target="#myModal2">Registre-se</a></li>
-				<li><a href="carrinho.html"><img src="img/icon-cart.svg" alt="" /> Meu carrinho (0)</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal" tabindex="10" style="color: #555;">Login</a></li>
+				<li><a class="popup" data-toggle="modal" data-target="#myModal2" tabindex="11" style="color: #555;">Registre-se</a></li>
+				<li><a href="carrinho.html" tabindex="12"><img src="img/icon-cart.svg" alt=""  /> Meu carrinho (0)</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -175,9 +206,9 @@
 	<div class="quemsomos">
 		<div class="container">
 			<div class="sobrenos" >
-				<h2 class="sobre" style="color:#fff;">Sobre o Açogano</h2>
+				<h2 class="sobre" style="color:#fff;" id="conteudo" tabindex="13">Sobre o Açogano</h2>
 				<hr style="margin-bottom:30px;">
-				<p class="sobrea">
+				<p class="sobrea" tabindex="14">
 					Açogano (junção de Açougue e Vegano), é um comércio eletrônico que visa comercializar produtos alimentícios sem qualquer exploração animal, com a intenção de promover uma maneira rápida e prática de adquirir pratos prontos e confiáveis para uma dieta vegana saudável. O Açogano conta com diversos produtos, como salsicha de tomate seco, espetos de legumes, linguiças, hambúrgueres de grão de bico, feijão, lentilha, combos, entre outros alimentos que podem compor um churrasco. Um empreendimento excelente, com mercado em crescimento, mas pouco explorado no ambiente digital.
 				</p>
 			</div>
@@ -185,7 +216,7 @@
 	</div>
     <div class="section2">
 		<article class="tcenter">
-			<h2 class="sobre">Pratos sugeridos</h2>
+			<h2 class="sobre" tabindex="15">Pratos sugeridos</h2>
 			<hr style="margin-bottom: 30px;">
 		</article>
 		<div id="box-carousel">
@@ -469,5 +500,6 @@
     </script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/index.js"></script>
+		<script src="js/contraste.js"></script>
 </body>
 </html>
