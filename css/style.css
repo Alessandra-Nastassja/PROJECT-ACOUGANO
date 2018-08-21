@@ -1,10 +1,10 @@
 
-		/* http://meyerweb.com/eric/tools/css/reset/ 
+		/* http://meyerweb.com/eric/tools/css/reset/
 		   v2.0 | 20110126
 		   License: none (public domain)
 		   MODIFICADO
 		*/
-		html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, 
+		html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
 		a, ul, li, article, aside, footer, header, nav, section {
 			margin: 0;
 			padding: 0;
@@ -23,8 +23,61 @@
 			list-style: none;
 		}
 
-		
+
 /*MENU*/
+
+/* acessibilidade*/
+.barra-acessibilidade {
+	width:100%;
+	height:40px;
+	background-color:#87986a;
+}
+
+.content10 {
+	width:95%;
+	position:relative;
+	margin: 0 auto;
+}
+.menu-acessibilidade {
+	width:100%;
+	/* height:40px; */
+	background-color:#1c1c1c;
+}
+.menu-esquerda{
+	float: left;
+	line-height: 40px;
+}
+.menu-esquerda a{
+	text-decoration: none;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family:'Work Sans', sans-serif;
+	font-size: 16px;
+}
+.menu-direita{
+	float: right;
+	line-height: 40px;
+}
+.menu-direita a{
+	text-decoration: none;
+	color: #555;
+	padding-left: 10px;
+	font-family:'Work Sans', sans-serif;
+	padding-right: 10px;
+	font-size: 16px;
+}
+.menu-esquerda a:hover,
+.menu-direita a:hover{
+	color: #fff !important;
+	text-decoration: none;
+}
+.menucontainer {
+	width:100%;
+	height:100px;
+	background-color:#fff;
+}
+/* fim do menu acessibilidade */
 
 a:link, a:visited {
 	color: #555;
@@ -42,7 +95,7 @@ a:hover, a:active {
 	display: none;
 }
 header{
-	margin:35px 55px 50px 55px;
+	margin: 22px 55px 32px 55px;
 }
 .site-title img{
 	max-width: 220px;
@@ -69,6 +122,7 @@ header{
 	text-transform: uppercase;
 	display: block;
 	padding:1rem;
+	text-align: center;
 }
 
 .nav-list a:hover {
@@ -88,7 +142,7 @@ header{
 	body{
 		width: 100%;
 	}
-	
+
 	.has-logo{
 		display: none;
 	}
@@ -106,14 +160,14 @@ header{
 	body{
 		width: 100%;
 	}
-	
+
 	.has-logo{
 		display: none;
 	}
 	.mobile-display{
 		display: block;
 		text-align: center;
-		
+
 	}
 }
 
@@ -121,7 +175,7 @@ header{
 	html{
 		font-size: 15px;
 	}
-	
+
 	.site-title img{
 		max-width: 200px;
 		display: inline-block;
@@ -152,10 +206,10 @@ header{
 		left: 0;
 		top:0;
 		background-color: #fff;
-		
+
 		max-height: 0;
 		overflow: hidden;
-	
+
 	}
 
 	.active{
@@ -172,42 +226,42 @@ header{
 /*TOPO*/
 
 #topo {
-	height: 445px; 
+	height: 445px;
 	width:100%;
-	background: #; 
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 
 #topo2 {
-	height: 445px; 
+	height: 445px;
 	width:100%;
-	background: #; 
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 
 #topo3 {
-	height: 445px; 
+	height: 445px;
 	width:100%;
-	background: #; 
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 
 #topo4 {
-	height: 445px; 
+	height: 445px;
 	width:100%;
-	background: #; 
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 
@@ -215,44 +269,44 @@ header{
 
 @media all and (max-width: 950px) {
 	#topo {
-	height: 250px; 
-	background: #; 
+	height: 250px;
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 }
 
 @media all and (max-width: 950px) {
 	#topo2 {
-	height: 250px; 
-	background: #; 
+	height: 250px;
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 }
 
 @media all and (max-width: 950px) {
 	#topo3 {
-	height: 250px; 
-	background: #; 
+	height: 250px;
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 }
 
 @media all and (max-width: 950px) {
 	#topo4 {
-	height: 250px; 
-	background: #; 
+	height: 250px;
+	background: #;
 	margin-top:-30px;
 	background: url("../img/header.jpg") no-repeat fixed;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 }
 }
@@ -306,7 +360,7 @@ header{
 }
 
 .card-size3 .popup {
-	color: #fff;
+	color: #fff !important;
 }
 
 .avatar {
@@ -356,8 +410,8 @@ header{
 	color: #333;
 }
 .card-size2{
-	margin: 5px 5px 5px 18px; 
-	
+	margin: 5px 5px 5px 18px;
+
 }
 .card-size p{font-size: 13px;}
 
@@ -388,7 +442,7 @@ header{
 	text-transform:uppercase;
 	font-weight:bold;
 	padding: 40px 0px 15px 0px;
-	line-height: 1.1; 
+	line-height: 1.1;
 }
 .quemsomos {
 	padding:20px 0px 70px 0px;
@@ -430,11 +484,11 @@ header{
 	font-size:13px;
 }
 hr {
-	height:10px; 
+	height:10px;
 	width:250px;
-	border:none; 
-	color:#dfdfdf; 
-	background-color:#c4c4c5; 
+	border:none;
+	color:#dfdfdf;
+	background-color:#c4c4c5;
 }
 .icon {
     display: block;
@@ -493,8 +547,16 @@ hr {
     -ms-transition: all 300ms ease-in-out;
 }
 
-
+.btn-submeter{
+	background:#2d2d2d !important;
+	border: none !important;
+	font-size:12px !important;
+	padding-left:60px !important;
+	padding-right:60px !important;
+	height: 72px !important;
+}
 .btn2{
+	color: #fff !important;
 	width: 80px !important;
 	margin-left: 5px !important;
 }
@@ -515,14 +577,14 @@ hr {
 }
 
 .popup{padding-left: 10px;}
-.user{font-size: 25px;} 
+.user{font-size: 25px;}
 
 
 
 /*FOOTER*/
 
 footer {
-	height: 330px; 
+	height: 330px;
 	background: url("../img/footer.png") no-repeat fixed ;
 	background-position: center bottom;
 	position: relative;
@@ -550,11 +612,11 @@ footer {
 
 .btn-primary {
 	width:100%;
-	height:72px;
+	height:38px;
 	background-color:#000;
 	border:none;
 	color:#fff;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	font-family:'Montserrat', sans-serif;
 }
 
@@ -575,7 +637,7 @@ footer {
 	left:-190px;
 	font-family:'Poppins', sans-serif;
 	position:relative;
-	margin: 0 auto; 
+	margin: 0 auto;
 	color:#fff;
 }
 
@@ -586,7 +648,7 @@ footer {
 	margin-left:200px;
 	position:absolute;
 	background: rgba(0,0,0,0.2);
-	-webkit-transition:All 0.6s ease-in-out; 
+	-webkit-transition:All 0.6s ease-in-out;
 	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -601,15 +663,15 @@ footer {
 }
 
 .twitter a {
-	background: rgba(180,180,180,.7); 
-	width: 40px; 
-	margin-top: 12px; 
-	margin-right: 30px; 
-	float: left; 
-	height: 40px; 
-	display: inline-block; 
-	-webkit-border-radius: 3px; 
-	-moz-border-radius: 3px; 
+	background: rgba(180,180,180,.7);
+	width: 40px;
+	margin-top: 12px;
+	margin-right: 30px;
+	float: left;
+	height: 40px;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -621,7 +683,7 @@ footer {
 	margin-left:245px;
 	position:absolute;
 	background: rgba(0,0,0,0.2);
-	-webkit-transition:All 0.6s ease-in-out; 
+	-webkit-transition:All 0.6s ease-in-out;
 	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -629,22 +691,22 @@ footer {
 }
 
 .fb:hover {
-	background: #415e9b; 
+	background: #415e9b;
 	-webkit-transition:All 0.6s ease-in-out; -moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;}
 
 .fb a {
-	background: rgba(180,180,180,.7); 
-	width: 40px; 
+	background: rgba(180,180,180,.7);
+	width: 40px;
 	margin-top: 12px;
-	margin-right: 30px; 
-	float: left; 
-	height: 40px; 
-	display: inline-block; 
-	-webkit-border-radius: 3px; 
-	-moz-border-radius: 3px; 
+	margin-right: 30px;
+	float: left;
+	height: 40px;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -655,7 +717,7 @@ footer {
 	margin-left:290px;
 	position:absolute;
 	background: rgba(0,0,0,0.2);
-	-webkit-transition:All 0.6s ease-in-out; 
+	-webkit-transition:All 0.6s ease-in-out;
 	-moz-transition:All 0.6s ease-in-out; -o-transition:All 0.6s ease-in-out;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -671,11 +733,11 @@ footer {
 
 .insta a {
 	background: rgba(180,180,180,.7);
-	width: 40px; 
-	margin-top: 12px; 
-	margin-right: 30px; 
-	float: left; 
-	height: 40px; 
+	width: 40px;
+	margin-top: 12px;
+	margin-right: 30px;
+	float: left;
+	height: 40px;
 	display: inline-block;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -694,9 +756,9 @@ footer {
 }
 
 article p {
-	font-family:'Montserrat', sans-serif; 
-	color:#7e7d7d; 
-	letter-spacing: .1em; 
+	font-family:'Montserrat', sans-serif;
+	color:#7e7d7d;
+	letter-spacing: .1em;
 	font-size:15px;
 }
 
@@ -709,12 +771,12 @@ article p {
 	text-transform:uppercase;
 	font-weight:bold;
 	padding: 40px 0px 15px 0px;
-	line-height: 1.1; 
+	line-height: 1.1;
 }
 
 @media only screen and (max-width: 980px){
 	footer {
-		height: 300px; 
+		height: 300px;
 		background: url("../img/footer.png") no-repeat fixed ;
 		background-position: center bottom;
 		background-color: #eeeeee;
@@ -728,11 +790,11 @@ article p {
 		text-transform:uppercase;
 		font-weight:bold;
 		padding: 25px 0px 10px 0px;
-		line-height: 1.1; 
+		line-height: 1.1;
 	}
 	article p {
-		font-family:'Montserrat', sans-serif; 
-		color:#7e7d7d; 
+		font-family:'Montserrat', sans-serif;
+		color:#7e7d7d;
 		font-size:15px;
 	}
 	.form-control{
@@ -754,7 +816,7 @@ article p {
 
 @media only screen and (max-width: 480px){
 	footer {
-		height: 300px; 
+		height: 300px;
 		background: url("../img/footer.png") no-repeat fixed ;
 		background-position: center bottom;
 		background-color: #eeeeee;
@@ -768,11 +830,11 @@ article p {
 		text-transform:uppercase;
 		font-weight:bold;
 		padding: 25px 0px 10px 0px;
-		line-height: 1.1; 
+		line-height: 1.1;
 	}
 	article p {
-		font-family:'Montserrat', sans-serif; 
-		color:#7e7d7d; 
+		font-family:'Montserrat', sans-serif;
+		color:#7e7d7d;
 		font-size:13px;
 	}
 	.form-control{
@@ -803,11 +865,11 @@ article p {
 
 .banner-contact{
 	background:url(../img/espeto2.jpg) no-repeat fixed;
-	height: 400px; 
+	height: 400px;
 	width:100%;
-	background: #; 
+	background: #;
 	margin-top:-30px;
-	background-position: center top; 	
+	background-position: center top;
 	position: relative;
 	opacity:0.80;
 	-moz-opacity:0.80;
@@ -824,7 +886,7 @@ article p {
 	font-size:60px;
 }
 @media all and (max-width: 950px) {
-	.text_banner{ 
+	.text_banner{
 	font-size:45px;
 	position:absolute;
 	top:80px;
@@ -839,7 +901,7 @@ article p {
 	 margin-top:-30px;
 	 margin-bottom:25px;
 	 text-align:center;
- }	 
+ }
 
 .input-contact{
   padding-left:50px;
@@ -849,11 +911,11 @@ article p {
 	color: #fff;
 }
 .form-control:focus {
-	border-color:#6d1a37;	
+	border-color:#6d1a37;
 }
 
 #mensagem{
-  height:100px;	
+  height:100px;
 }
 .information_contact{
 	text-align:center;
@@ -870,7 +932,7 @@ article p {
 
 .fotos:hover {
 	opacity:0.2;
-	-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: 
+	-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition:
 all 1s ease; transition: all 1s ease;
 }
 
@@ -900,10 +962,10 @@ all 1s ease; transition: all 1s ease;
 	font-size:13px;
 }
 
-.caixinha{margin-left: 505px; margin-top: -5px; font-family: verdana; 
-font-size: 9px; padding: 8px; text-align: left; position: absolute; 
--webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: 
-all 1s ease; transition: all 1s ease; opacity: 0; background: #ffffff; 
+.caixinha{margin-left: 505px; margin-top: -5px; font-family: verdana;
+font-size: 9px; padding: 8px; text-align: left; position: absolute;
+-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition:
+all 1s ease; transition: all 1s ease; opacity: 0; background: #ffffff;
 -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 
 .service-inline {

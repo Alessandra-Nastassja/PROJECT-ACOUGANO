@@ -21,17 +21,48 @@
 	<link rel="icon" href="img/apple.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<!-- Altera e Diminui fonte-->
+	<script type="text/javascript" src="js/fonte.js"></script>
+
+	<!-- Auto contraste -->
+	<link rel="stylesheet" href="css/contraste.css">
+
 	<!-- Bootstrap/CSS -->
 	<!-- Bootstrap 4.0 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
-<body>	
+<body>
 	<div class="mobile-display" >
 		<h2 class="site-title">
 			<a href="#">
 				<img src="img/logonovo.png" alt="Açogano">
 			</a>
 		</h2>
+	</div>
+	<div class="barra-acessibilidade">
+		<div class="content10">
+		<div class="menu-acessibilidade">
+			<div class="menu-esquerda">
+				<a href="#menu" accesskey="1" tabindex="1" class="acessibilidade">
+					<span>1. Ir para o menu</span>
+				</a>
+				<a href="#conteudo" accesskey="2" tabindex="2" class="acessibilidade">
+					<span>2. Ir para o conteúdo</span>
+				</a>
+			</div>
+			<div class="menu-direita">
+				<a href="#"  onClick="fonte('a');" tabindex="3" class="acessibilidade">
+					<span>A+</span>
+				</a>
+				<a href="#" onClick="fonte('d');" tabindex="4" class="acessibilidade">
+					<span>a-</span>
+				</a>
+				<a id="altocontraste" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" tabindex="5" class="acessibilidade">
+					Alto contraste
+				</a>
+			</div>
+		</div>
+		</div>
 	</div>
 	<header>
 		<div id="content">
@@ -60,7 +91,7 @@
 							  <div class="form-group">
 								<input type="password" class="form-control" placeholder="Senha">
 							  </div>
-							 
+
 							 <div class="row">
 							  <div class="col-md-6">
 								<div class="form-group">
@@ -92,7 +123,7 @@
 					</div><!-- /.modal-body -->
 				  </div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
-		  </div><!-- /.modal -->  
+		  </div><!-- /.modal -->
 
 		  <!-- Modal do Cadastro-->
 		  <div class="modal fade bd-example-modal-lg" id="myModal2" tabindex="-1" role="dialog">
@@ -149,43 +180,43 @@
 					</div><!-- /.modal-body -->
 				  </div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
-		  </div><!-- /.modal -->  
+		  </div><!-- /.modal -->
 		</div>
 		<nav>
 			<a href="#" class="toggle-menu">&#9776;</a>
 			<ul class="nav-list nav-open" id="nav">
-				<li><a href="index.html">Início</a></li>
-				<li><a href="loja.html">Loja</a></li>
-				<li><a href="sobre.html">Sobre nós</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="index.html" id="menu" tabindex="6" class="acessibilidade">Início</a></li>
+				<li><a href="sobre.html" tabindex="7" class="acessibilidade">Sobre nós</a></li>
+				<li><a href="loja.html" tabindex="8" class="acessibilidade">Loja</a></li>
+				<li><a href="contato.html" tabindex="9" class="acessibilidade">Contato</a></li>
 				<li class="has-logo"><a href="#">
 					<h2 class="site-title">
 						<img src="img/logonovo.png" alt="Açogano">
 					</h2>
 				</a></li>
-				<li><a class="popup" data-toggle="modal" data-target="#myModal">Login</a></li>
-				<li><a class="popup" data-toggle="modal" data-target="#myModal2">Registre-se</a></li>
-				<li><a href="carrinho.html"><img src="img/icon-cart.svg" alt="" /> Meu carrinho (0)</a></li>
+				<li><a class="popup acessibilidade" data-toggle="modal" data-target="#myModal" tabindex="10" style="color: #555;">Login</a></li>
+				<li><a class="popup acessibilidade" data-toggle="modal" data-target="#myModal2" tabindex="11" style="color: #555;">Registre-se</a></li>
+				<li><a href="carrinho.html" tabindex="12" class="acessibilidade"><img src="img/icon-cart.svg" alt=""/> Meu carrinho (0)</a></li>
 			</ul>
 		</nav>
-	</header>	
+	</header>
 	<div id="topo">
 	</div>
 	<main>
 	<div class="quemsomos">
 		<div class="container">
 			<div class="sobrenos" >
-				<h2 class="sobre" style="color:#fff;">Sobre o Açogano</h2>
+				<h2 class="sobre acessibilidade" style="color:#fff;" id="conteudo" tabindex="13">Sobre o Açogano</h2>
 				<hr style="margin-bottom:30px;">
-				<p class="sobrea">
-					Açogano (junção de Açougue e Vegano), é um comércio eletrônico que visa comercializar produtos alimentícios sem qualquer exploração animal, com a intenção de promover uma maneira rápida e prática de adquirir pratos prontos e confiáveis para uma dieta vegana saudável. O Açogano conta com diversos produtos, como salsicha de tomate seco, espetos de legumes, linguiças, hambúrgueres de grão de bico, feijão, lentilha, combos, entre outros alimentos que podem compor um churrasco. Um empreendimento excelente, com mercado em crescimento, mas pouco explorado no ambiente digital.			
+				<p class="sobrea acessibilidade" tabindex="14">
+					Açogano (junção de Açougue e Vegano), é um comércio eletrônico que visa comercializar produtos alimentícios sem qualquer exploração animal, com a intenção de promover uma maneira rápida e prática de adquirir pratos prontos e confiáveis para uma dieta vegana saudável. O Açogano conta com diversos produtos, como salsicha de tomate seco, espetos de legumes, linguiças, hambúrgueres de grão de bico, feijão, lentilha, combos, entre outros alimentos que podem compor um churrasco. Um empreendimento excelente, com mercado em crescimento, mas pouco explorado no ambiente digital.
 				</p>
 			</div>
 		</div>
 	</div>
     <div class="section2">
 		<article class="tcenter">
-			<h2 class="sobre">Pratos sugeridos</h2>
+			<h2 class="sobre acessibilidade" tabindex="15">Pratos sugeridos</h2>
 			<hr style="margin-bottom: 30px;">
 		</article>
 		<div id="box-carousel">
@@ -202,11 +233,11 @@
 											<img class="card-img-top" src="img/img-8.jpg"
 												alt="Card image cap">
 											<div class="card-body">
-												<strong class="titlecard">Espetinho de legumes</strong>
-												<p>Pimentão, abobora e outras especiarias.</p>
-												<h6 class="card-text">R$ 12,00</h6>
+												<strong class="titlecard acessibilidade">Espetinho de legumes</strong>
+												<p class="acessibilidade">Pimentão, abobora e outras especiarias.</p>
+												<h6 class="card-text acessibilidade">R$ 12,00</h6>
 												<div class="button">
-													<button class="btn btn4 btn-info btn-sm" data-html="true"
+													<button class="btn btn4 btn-info btn-sm acessibilidade" data-html="true"
 														data-toggle="popover1" title="Espetinho de legumes"
 														data-content="
 					  	                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
@@ -215,8 +246,8 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Use espeto ou grelha para os assar. Asse até que os legumes fiquem tenros, mas que não se desmanchem.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-														Ver detalhe</button>
-													<a class="popup btn btn4 btn-danger btn-sm"
+														Destalhes</button>
+													<a class="popup btn btn4 btn-danger btn-sm acessibilidade"
 														data-toggle="modal" data-target="#myModal">Comprar</a>
 												</div>
 											</div>
@@ -227,11 +258,11 @@
 											<img class="card-img-top" src="img/img-3.jpg"
 												alt="Card image cap">
 											<div class="card-body">
-												<strong class="titlecard">Sanduíche natural</strong>
-												<p>Patê de jaca, tomate, cenoura e alface.</p>
-												<h6 class="card-text">R$ 7,00</h6>
+												<strong class="titlecard acessibilidade">Sanduíche natural</strong>
+												<p class="acessibilidade">Patê de jaca, tomate, cenoura e alface.</p>
+												<h6 class="card-text acessibilidade">R$ 7,00</h6>
 												<div class="button">
-													<button class="btn btn4 btn-info btn-sm" data-html="true"
+													<button class="btn btn4 btn-info btn-sm acessibilidade" data-html="true"
 														data-toggle="popover1" title="Sanduíche natural"
 														data-content="
 					  	                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
@@ -240,8 +271,8 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-														Ver detalhe</button>
-													<a class="popup btn btn4 btn-danger btn-sm"
+														Destalhes</button>
+													<a class="popup btn btn4 btn-danger btn-sm acessibilidade"
 														data-toggle="modal" data-target="#myModal">Comprar</a>
 												</div>
 											</div>
@@ -252,12 +283,12 @@
 											<img class="card-img-top" src="img/img-16.jpg"
 												alt="Card image cap">
 											<div class="card-body">
-												<strong class="titlecard">Sopa de legumes e
-													cenouras de Paris</strong>
-												<p>Cenouras, pimentão, abobora, cebola e outros</p>
-												<h6 class="card-text">R$ 7,99</h6>
+												<strong class="titlecard acessibilidade">Sopa de legumes e
+													cenouras</strong>
+												<p class="acessibilidade">Cenouras, pimentão, abobora, cebola e outros</p>
+												<h6 class="card-text acessibilidade">R$ 7,99</h6>
 												<div class="button">
-													<button class="btn btn4 btn-info btn-sm" data-html="true"
+													<button class="btn btn4 btn-info btn-sm acessibilidade" data-html="true"
 														data-toggle="popover1" title="Espetinho de legumes"
 														data-content="
 					  	                    <i class='fa fa-clock-o' aria-hidden='true'> 30 min </i>
@@ -266,8 +297,8 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Retire da embalagem. Esquente no forno ou no microondas.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-														Ver detalhe</button>
-													<a class="popup btn btn4 btn-danger btn-sm"
+														Destalhes</button>
+													<a class="popup btn btn4 btn-danger btn-sm acessibilidade"
 														data-toggle="modal" data-target="#myModal">Comprar</a>
 												</div>
 											</div>
@@ -298,7 +329,7 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Esquente no forno ou no microondas.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-															Ver detalhe</button>
+															Destalhes</button>
 														<a class="popup btn btn4 btn-danger btn-sm"
 															data-toggle="modal" data-target="#myModal">Comprar</a>
 													</div>
@@ -323,7 +354,7 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. E sirva-se.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-															Ver detalhe</button>
+															Destalhes</button>
 														<a class="popup btn btn4 btn-danger btn-sm"
 															data-toggle="modal" data-target="#myModal">Comprar</a>
 													</div>
@@ -336,7 +367,7 @@
 													alt="Card image cap">
 												<div class="card-body">
 													<strong class="titlecard">Salada de beterrada
-														verde com soja ao vapor</strong>
+														verde</strong>
 													<p>Grão de bico, beterraba, maçã e agrião</p>
 													<h6 class="card-text">R$ 3,50</h6>
 													<div class="button">
@@ -349,7 +380,7 @@
 					  	                    <strong>Calorias:</strong><p>40Kcal cada</p>
 					  	                    <strong>Modo de preparar:</strong><p>Retire da embalagem. Retire da embalagem. E sirva-se.</p>
 					  	                    <button class='btn btn-outline-danger btn-sm text-center'>Adicionar ao carrinho</button>">
-															Ver detalhe</button>
+															Destalhes</button>
 														<a class="popup btn btn4 btn-danger btn-sm"
 															data-toggle="modal" data-target="#myModal">Comprar</a>
 													</div>
@@ -383,21 +414,21 @@
 		<div class="quemsomos">
 			<div class="container">
 				<div class="sobrenos">
-					<h2 class="sobre" style="color:#fff;">Quem somos</h2>
+					<h2 class="sobre acessibilidade" style="color:#fff;">Quem somos</h2>
 					<hr>
 					<div class="row">
 					  <div class="fundo"><img src="img/alessandra.jpg" class="img-fluid fotos" alt="...">
-					  <p class="descri">Alessandra</p>
-					  <p class="descri2">Co-fundadora</p>
+					  <p class="descri acessibilidade">Alessandra</p>
+					  <p class="descri2 acessibilidade">Co-fundadora</p>
 					  </div>
 					  <div class="fundo"><img src="img/debora.jpg" class="img-fluid fotos" alt="...">
-					  <p class="descri">Débora Ferreira</p>
-					  <p class="descri2">Sócia</p></div>
+					  <p class="descri acessibilidade">Débora Ferreira</p>
+					  <p class="descri2 acessibilidade">Sócia</p></div>
 					  <div class="fundo"><img src="img/marina.jpg" class="img-fluid fotos" alt="...">
-					  <p class="descri">Marina</p>
-					  <p class="descri2">Fundadora</p></div>
+					  <p class="descri acessibilidade">Marina</p>
+					  <p class="descri2 acessibilidade">Fundadora</p></div>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
     </div><!-- /.section1-->
@@ -408,12 +439,12 @@
 			<a class="twitter" href="https://facebook.com/açogano"><img src="img/twitter.png" alt="Twitter"></a>
 			<a class="fb" href="https://facebook.com/açogano"><img src="img/facebook.png" alt="Facebook"></a>
 			<a class="insta" href="https://instagram.com/açogano"><img src="img/instagram.png" alt="Instagram"></a>
-		</div>	
+		</div>
 		<div class="section2">
 		  <article class="tcenter">
-			<h2 class="sobrefooter">Receba nossas novidades</h2>
+			<h2 class="sobrefooter acessibilidade">Receba nossas novidades</h2>
 			<hr>
-			<p>Envie seu email abaixo para o Açogano, por favor.</p>
+			<p class="acessibilidade">Envie seu email abaixo para o Açogano, por favor.</p>
 		  </article>
 			<form class=" tcenter">
 			  <div class="row">
@@ -422,7 +453,7 @@
 				  <div class="input-group">
 					<input type="email" class="form-control" placeholder="Digite seu email">
 					<span class="input-group-btn">
-					  <button type="submit" class="btn btn-primary" style="background:#2d2d2d; border: none; font-size:12px; padding-left:60px; padding-right:60px;">Submeter</button>
+					  <button type="submit" class="btn btn-primary btn-submeter acessibilidade">Submeter</button>
 					</span>
 				  </div>
 				</div>
@@ -434,7 +465,7 @@
 		<div class="row">
 			<div class="col-md-12 col-xs-12">
 				<ul>
-					<li>Formas de pagamento</li>
+					<li class="acessibilidade">Formas de pagamento</li>
 					<li class="icon-payment">
 						<li class="fa fa-cc-visa fa-2x"></li>
 					<li class="icon-payment"></li>
@@ -448,12 +479,12 @@
 			</div>
 		</div>
 	</div>
-	
+
      <!-- Bootstrap/JS -->
     <!-- Bootstrap 4.0 -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
 		  $("#carousel").carousel({
@@ -469,5 +500,6 @@
     </script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/index.js"></script>
+		<script src="js/contraste.js"></script>
 </body>
 </html>
