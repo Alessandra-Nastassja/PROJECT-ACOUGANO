@@ -1,3 +1,5 @@
+![](https://user-images.githubusercontent.com/27302446/81297962-77cb1900-904a-11ea-875f-f4677d2e6788.png)
+
 <h1 align="center">PROJECT-ACOUGANO</h1>
 <p align="center">The objective is the creation of Açougano, a responsive proposal of e-commerce vegan.</p>
 
