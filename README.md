@@ -15,7 +15,7 @@ Some people are vegan, people who don't have time to go to the supermarket or ba
 
 [Article in Pt-Br](https://www.dropbox.com/s/b5x2ykd35clwf5a/Simgetec%20A%C3%87OUGANO%20%283%29.docx?dl=0)
 
-### *Tecnologias usadas:* 📌 
+### *Used technologies:* 📌 
 
 - [HTML]();
 - [CSS]();
